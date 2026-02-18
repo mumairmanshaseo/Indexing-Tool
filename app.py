@@ -1,5 +1,5 @@
 """
-Index Master by Optimize Plus — Google Indexing API Bulk Tool
+Index Master — Google Indexing API Bulk Tool
 A single-file Streamlit dashboard for bulk URL indexing via the Google Indexing API.
 """
 
@@ -14,7 +14,7 @@ from googleapiclient.errors import HttpError
 
 # ─── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Index Master — Optimize Plus",
+    page_title="Index Master — Bulk Indexing Tool",
     page_icon="⚡",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -124,7 +124,7 @@ st.markdown(
     """
     <div class="hero-banner">
         <h1>⚡ Index <span>Master</span></h1>
-        <p>by Optimize Plus &mdash; Google Indexing API Bulk Tool</p>
+        <p>Google Indexing API Bulk Tool</p>
     </div>
     """,
     unsafe_allow_html=True,
@@ -223,7 +223,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown(
         "<div style='text-align:center;color:#555;font-size:0.8rem;'>"
-        "Index Master v1.0<br>© 2026 Optimize Plus"
+        "Index Master v1.0"
         "</div>",
         unsafe_allow_html=True,
     )
@@ -327,3 +327,4 @@ if run_btn and unique_urls and creds_json:
     # ─── Results Table ─────────────────────────────────────────────────────
     st.markdown("### 📑 Detailed Results")
     st.dataframe(results, use_container_width=True)
+    
